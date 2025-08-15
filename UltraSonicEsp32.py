@@ -1,8 +1,8 @@
 from machine import Pin
 import time
 
-trigger_pin = Pin(18, Pin.OUT)  # Replace 15 with your actual TRIG pin
-echo_pin = Pin(5, Pin.IN)    # Replace 14 with your actual ECHO pin
+trigger_pin = Pin(18, Pin.OUT)  # ganti dengan pin TRIGGER
+echo_pin = Pin(5, Pin.IN)    # ganti dengan pin ECHO
 led = Pin(2, Pin.OUT)
 
 def measure_distance():
@@ -31,4 +31,5 @@ while True:
         led.on()
     else:
         led.off()
+
     time.sleep(1)
